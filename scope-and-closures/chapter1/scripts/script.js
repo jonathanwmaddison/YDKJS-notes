@@ -7,6 +7,7 @@ $(document).ready(function() {
         $conceptNote.find(".concept-description").text(concept.definition)
         concept.syntax ? $conceptNote.find(".concept-syntax").text(concept.syntax) : $conceptNote.find(".concept-syntax").remove()
         concept.link ? $conceptNote.find(".concept-link").attr("href", concept.link) : $conceptNote.find(".concept-link").remove()
+        concept.quote ? $conceptNote.find(".concept-quote").text(concept.quote) : $conceptNote.find(".concept-quote").remove()
         $host.append("<div>"+$conceptNote.html()+"</div>")
     })
     
